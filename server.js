@@ -6,7 +6,7 @@ import axios from 'axios';
 const app = express();
 const PORT = 3001; // Port for the secondary app
 
-// const LOCAL_IP = '10.159.101.152';
+// const LOCAL_IP = '192.168.137.70';
 
 app.use(cors());
 
@@ -86,7 +86,7 @@ app.post('/send-gps', async (req, res) => {
   }
 });
 
-//POST ROUTE FOR SENDING DATA TO THE MAIN APP USING LOCAL NETWORK
+// POST ROUTE FOR SENDING DATA TO THE MAIN APP USING LOCAL NETWORK
 // app.post('/send-gps', async (req, res) => {
 //   const { latitude, longitude, device_id } = req.body;
 
